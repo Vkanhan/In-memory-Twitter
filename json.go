@@ -6,9 +6,9 @@ import (
 )
 
 type Response struct {
-	Success bool        `json:"success"`
-	Data    any `json:"data,omitempty"`
-	Error   string      `json:"error,omitempty"`
+	Success bool   `json:"success"`
+	Data    any    `json:"data,omitempty"`
+	Error   string `json:"error,omitempty"`
 }
 
 func respondWithJSON(w http.ResponseWriter, code int, payload any) {

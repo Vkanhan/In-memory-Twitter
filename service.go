@@ -204,7 +204,6 @@ func (ts *TwitterService) GetUserProfile(userID int) (map[string]any, error) {
 	}, nil
 }
 
-
 func (ts *TwitterService) GetFeed(userID int, limit int) ([]*Tweet, error) {
 	user, err := ts.GetUser(userID)
 	if err != nil {

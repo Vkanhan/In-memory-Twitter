@@ -124,4 +124,3 @@ func (h *Handler) GetFeed(w http.ResponseWriter, r *http.Request) {
 		Data:    tweets,
 	})
 }
-
